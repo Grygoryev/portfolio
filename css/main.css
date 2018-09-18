@@ -136,9 +136,18 @@ a:link, a:visited, a:focus {
 .sources__link {
   padding-bottom: 5px;
   margin-bottom: 10px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .sources__link:hover {
-    border-bottom: 2px solid red; }
+    background-color: lightgreen; }
+    .sources__link:hover::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: red; }
 
 .tech-icons {
   min-width: 180px;
