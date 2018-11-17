@@ -1,6 +1,6 @@
 .close-btn {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   position: absolute;
   right: 20px;
@@ -9,7 +9,7 @@
     position: absolute;
     top: 50%;
     height: 2px;
-    width: 17px;
+    width: 35px;
     background-color: black; }
     .close-btn span:first-child {
       -webkit-transform: rotate(45deg);
@@ -54,6 +54,48 @@
   100% {
     -webkit-transform: rotateZ(90deg) translate(1em, -9em);
             transform: rotateZ(90deg) translate(1em, -9em); } }
+
+@-webkit-keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(15);
+            transform: scale(15); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(15);
+            transform: scale(15); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes hideShrink {
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(0.1) scaleX(0.8);
+            transform: scaleY(0.1) scaleX(0.8);
+    visibility: hidden; } }
+
+@keyframes hideShrink {
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(0.1) scaleX(0.8);
+            transform: scaleY(0.1) scaleX(0.8);
+    visibility: hidden; } }
+
+.showUp {
+  -webkit-animation: showUp .3s forwards;
+          animation: showUp .3s forwards; }
+
+.hideShrink {
+  -webkit-animation: hideShrink .4s forwards;
+          animation: hideShrink .4s forwards; }
 
 * {
   box-sizing: border-box; }
