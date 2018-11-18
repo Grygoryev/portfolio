@@ -78,15 +78,15 @@
 @-webkit-keyframes hideShrink {
   100% {
     opacity: 0;
-    -webkit-transform: scaleY(0.1) scaleX(0.8);
-            transform: scaleY(0.1) scaleX(0.8);
+    -webkit-transform: scaleY(0.8) scaleX(0.8);
+            transform: scaleY(0.8) scaleX(0.8);
     visibility: hidden; } }
 
 @keyframes hideShrink {
   100% {
     opacity: 0;
-    -webkit-transform: scaleY(0.1) scaleX(0.8);
-            transform: scaleY(0.1) scaleX(0.8);
+    -webkit-transform: scaleY(0.8) scaleX(0.8);
+            transform: scaleY(0.8) scaleX(0.8);
     visibility: hidden; } }
 
 .showUp {
